@@ -1,54 +1,64 @@
 /**
- * created package com.cashapona.collections.queue on 10-jun-2022
+ * com.cashapona.collections.map.jun15 created on jun 15
  */
-package com.cashapona.collections.queue.jun10;
+package com.cashapona.collections.map.jun15;
 /**
  * @author Anuradha
- * create Student class of id, name, address as private
+ * created Student bean class using the fields name, address, phoneNumber of private type
  */
 public class Student {
-	int id;
-	String name;
-	String address;
+	private String name;
+	private String address;
+	private String phoneNumber;
 	/**
-	 * @return the id
+	 * @param name
+	 * @param address
+	 * @param phoneNumber
 	 */
-	int getId() {
-		return id;
+	public Student(String name, String address, String phoneNumber) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.phoneNumber = phoneNumber;
 	}
 	/**
 	 * @return the name
 	 */
-	String getName() {
+	public String getName() {
 		return name;
 	}
 	/**
 	 * @return the address
 	 */
-	String getAddress() {
+	public String getAddress() {
 		return address;
 	}
 	/**
-	 * @param id the id to set
+	 * @return the phoneNumber
 	 */
-	void setId(int id) {
-		this.id = id;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
 	/**
 	 * @param name the name to set
 	 */
-	void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	/**
 	 * @param address the address to set
 	 */
-	void setAddress(String address) {
+	public void setAddress(String address) {
 		this.address = address;
+	}
+	/**
+	 * @param phoneNumber the phoneNumber to set
+	 */
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	@Override
 	public String toString() {
-		return "Student [id = " + id + ", name = " + name + ", address = " + address + "]";
+		return "Student [name=" + name + ", address=" + address + ", phoneNumber=" + phoneNumber + "]";
 	}
-	
 }
